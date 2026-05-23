@@ -1,0 +1,242 @@
+#tentang-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 60vh;
+  padding: 100px 10% 40px;
+  text-align: left;
+}
+
+#hero-tentang h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: var(--fw-extra-bold);
+  color: var(--accent-utama);
+  margin-bottom: 15px;
+}
+
+#hero-tentang h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: var(--fw-regular);
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+#keunggulan {
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card-keunggulan {
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid var(--text-muted);
+
+}
+
+
+.card-keunggulan h3 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--accent-utama);
+  margin-bottom: 15px;
+}
+
+.card-keunggulan p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+#core-fiture {
+  padding: 80px 10%;
+  background: var(--bg-tertiary);
+
+}
+
+#input-aktifitas {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.contoh-input {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+#input-aktifitas p {
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: var(--accent-utama);
+}
+
+.wadah-input {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+#input-aktifitas input {
+  flex: 1;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 2px solid #eef2f6;
+  background: white;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+
+#input-aktifitas button {
+  padding: 12px 25px;
+  border-radius: 12px;
+  border: none;
+  background: var(--bg-tertiary);
+  color: var(--accent-utama);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#atur-aktifitas {
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: none;
+  background: var(--accent-utama);
+  color: white;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+#hasil-tabel {
+  padding: 80px 10%;
+}
+
+#hasil-nama {
+  font-weight: var(--fw-extra-bold);
+  margin-bottom: 40px;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.tabel-metrik {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  border-color: 3px solid var(--text-muted);
+}
+
+.tabel-metrik th,
+.tabel-metrik td {
+  padding: 30px;
+  border: 1px solid rgba(79, 70, 229, 0.1);
+  vertical-align: top;
+}
+
+.tabel-metrik thead th {
+  background: var(--accent-utama);
+  color: white;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  padding: 20px;
+}
+
+.tabel-metrik .teks-sisi {
+  background: rgba(79, 70, 229, 0.05);
+  color: var(--accent-utama);
+  font-weight: var(--fw-bold);
+  width: 150px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.quadrant {
+  min-height: 300px;
+}
+
+.quadrant ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quadrant li {
+  padding: 10px 15px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  border-left: 4px solid var(--accent-utama);
+}
+
+/* warna kuadrannya */
+.q1 {
+  background-color: rgba(194, 93, 93, 0.05);
+}
+
+.q2 {
+  background-color: rgba(46, 156, 107, 0.05);
+}
+
+.q3 {
+  background-color: rgba(245, 158, 11, 0.05);
+}
+
+.q4 {
+  background-color: rgba(95, 155, 213, 0.05);
+}
+
+.q1 li {
+  border-left-color: var(--accent-merah);
+}
+
+.q2 li {
+  border-left-color: var(--accent-utama);
+}
+
+.q3 li {
+  border-left-color: var(--accent-kuning);
+}
+
+.q4 li {
+  border-left-color: var(--text-secondary);
+}
+
+#halaman-kesimpulan {
+  margin-top: 60px;
+  padding: 2px;
+  background: white;
+
+}
+
+#halaman-kesimpulan h3 {
+  color: var(--accent-utama);
+  font-weight: var(--fw-bold);
+  margin-bottom: 20px;
+}
+
+#halaman-kesimpulan p {
+  line-height: 1.5;
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+footer {
+  padding: 40px 10%;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
